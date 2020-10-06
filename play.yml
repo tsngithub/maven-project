@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: updating yum repo
+    yum: name=httpd state=latest
